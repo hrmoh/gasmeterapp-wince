@@ -1,0 +1,778 @@
+//Microsoft eMbedded Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Kara Data Processing Tools and Technologies, www.arakara.ir\0"
+            VALUE "FileDescription", "Works with Kara Gas Meter Reading Management Software ver 1.0.2.8\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CONTOR\0"
+            VALUE "LegalCopyright", "Copyright © 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CONTOR.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Symbol MC3000 Compatible Kara Gas Meter Reading Program\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONTOR_DIALOG DIALOG DISCARDABLE  0, 0, 158, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    CONTROL         "",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,17,10
+    CONTROL         "ò‰ Ê—ŒÊ«‰Ì",IDC_METERREADING,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,19,144,10
+    CONTROL         " ‰ŸÌ„« ",IDC_SHOWINFORMATON,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,33,144,10
+END
+
+IDD_READPROGRESS DIALOG DISCARDABLE  0, 0, 137, 5
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    CONTROL         "Progress1",IDC_READPROGRESS,"msctls_progress32",
+                    PBS_SMOOTH,0,0,137,6
+END
+
+IDD_CUSTOMERS_ADSORTED DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   "œ—Ã —ﬁ„",IDC_SELECT,81,67,64,8
+    PUSHBUTTON      "œ—Ã Œÿ«",IDC_ERR,13,67,64,8
+    PUSHBUTTON      "»«“ê‘ ",IDOK,109,81,42,10
+    LTEXT           "‘„«—Â «‘ —«ò:",IDC_SSUBTITLE,103,12,42,8
+    CTEXT           "",IDC_SSUB,13,12,86,8,WS_BORDER
+    LTEXT           "‰«„ „‘ —ò:",IDC_SNAMTITLE,103,23,33,8
+    CTEXT           "",IDC_SNAM,13,23,86,8,WS_BORDER
+    LTEXT           "òœ ¬œ—”:",IDC_SADTITLE,103,34,31,8
+    CTEXT           "",IDC_SAD,13,34,86,8,WS_BORDER
+    LTEXT           "”—Ì«· ò‰ Ê—:",IDC_SSERTITLE,103,45,36,8
+    CTEXT           "",IDC_SSER,13,45,86,8,WS_BORDER
+    PUSHBUTTON      "»⁄œÌ",IDC_NEXT,55,56,21,8
+    PUSHBUTTON      "ﬁ»·Ì",IDC_PREV,78,56,21,8
+    PUSHBUTTON      "‰‘«‰Ì",IDC_MORE,13,56,40,8
+    PUSHBUTTON      "«‰ Œ«» ﬁÿ⁄Â",IDC_SELPATH,101,56,44,8
+    GROUPBOX        "  — Ì» Œÿ ”Ì— ",IDC_SFRAME,7,3,144,75,BS_CENTER
+    PUSHBUTTON      "—Ê‘ ò‰ Ê—ŒÊ«‰Ì",IDC_CHANGEMETHEOD,51,81,55,10
+    PUSHBUTTON      "¬„«—",IDC_SETTINGS,7,81,42,10
+END
+
+IDD_CUSTOMERS_MOREINFO DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    PUSHBUTTON      "»«“ê‘ ",IDOK,7,81,144,10
+    LTEXT           "‰‘«‰Ì „‘ —ò:",IDC_SADRTITLE,59,26,41,8
+    RTEXT           "",IDC_SADDRESS,14,35,129,22,WS_BORDER
+    GROUPBOX        "",IDC_SFRAME,7,3,144,75,BS_CENTER
+END
+
+IDD_CUSTOMERS_READ DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_ENOW,13,32,86,12,ES_CENTER | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,13,56,132,10
+    PUSHBUTTON      "œ—Ã Œÿ«",IDC_ERROR,13,68,132,10
+    PUSHBUTTON      "«‰’—«›",IDCANCEL,13,80,62,10
+    LTEXT           " «—ÌŒ ﬁ»·Ì:",IDC_SPREVDTITLE,103,12,32,8
+    CTEXT           "",IDC_SPREVD,13,12,86,8,WS_BORDER
+    LTEXT           "—ﬁ„ ﬁ»·Ì:",IDC_SPREVCTITLE,103,23,28,8
+    CTEXT           "",IDC_SPREVC,13,23,86,8,WS_BORDER
+    LTEXT           "—ﬁ„ ›⁄·Ì:",IDC_SNOWTITLE,103,34,29,8
+    LTEXT           "„’—›:",IDC_SCONTITLE,103,45,21,8
+    CTEXT           "",IDC_SCON,13,45,86,8,WS_BORDER
+    PUSHBUTTON      "Õ–› —ﬁ„",IDC_DELETE,83,80,62,10
+    GROUPBOX        " œ—Ã —ﬁ„ ›⁄·Ì ",IDC_SFRAME,7,3,144,90,BS_CENTER
+END
+
+IDD_CUSTOMERS_ERROR DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   "’›ÕÂ ﬁ»·",IDC_PREVPAGE,81,67,64,8
+    PUSHBUTTON      "’›ÕÂ »⁄œ",IDC_NEXTPAGE,13,67,64,8
+    CONTROL         "‰»Êœ »—ç”» »«—òœœ«—",IDC_CERR01,"Button",
+                    BS_AUTOCHECKBOX | BS_RIGHT | WS_TABSTOP,13,12,131,8
+    CONTROL         "‰»Êœ »—ç”» »œÊ‰ »«—òœ )œ—» „‰“·(",IDC_CERR02,"Button",
+                    BS_AUTOCHECKBOX | BS_RIGHT | WS_TABSTOP,13,23,131,8
+    CONTROL         "⁄œ„ Õ÷Ê— „‘ —ò",IDC_CERR03,"Button",BS_AUTOCHECKBOX | 
+                    BS_RIGHT | WS_TABSTOP,13,34,131,8
+    CONTROL         " Œ·ÌÂ",IDC_CERR04,"Button",BS_AUTOCHECKBOX | BS_RIGHT | 
+                    WS_TABSTOP,13,45,131,8
+    CONTROL         "„„«‰⁄ ",IDC_CERR05,"Button",BS_AUTOCHECKBOX | BS_RIGHT | 
+                    WS_TABSTOP,13,55,131,8
+    GROUPBOX        " œ—Ã Œÿ« ",IDC_SFRAME,7,3,144,75,BS_CENTER
+    PUSHBUTTON      " √ÌÌœ",IDOK,107,81,44,10
+    PUSHBUTTON      "«‰’—«›",IDCANCEL,57,81,44,10
+    PUSHBUTTON      "œ—Ã —ﬁ„",IDC_READ,7,81,44,10
+END
+
+IDD_SEARCH_SELTOOL DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   "»«“ê‘ ",IDOK,7,81,144,10
+    PUSHBUTTON      "«”ò‰ »«—òœ",IDC_METHOD1,13,14,132,10
+    PUSHBUTTON      "Ã” ÃÊÌ ”—Ì«· ò‰ Ê—",IDC_METHOD2,13,26,132,10
+    PUSHBUTTON      "Ã” ÃÊÌ ‘„«—Â «‘ —«ò",IDC_METHOD3,13,38,132,10
+    PUSHBUTTON      "Ã” ÃÊÌ òœ ¬œ—”",IDC_METHOD4,13,50,132,10
+    PUSHBUTTON      " — Ì» Œÿ ”Ì—",IDC_METHOD5,13,62,132,10
+    GROUPBOX        " «‰ Œ«» —Ê‘ ò‰ Ê—ŒÊ«‰Ì ",IDC_SFRAME,7,3,144,75,
+                    BS_CENTER
+END
+
+IDD_CUSTOMERS_SCAN DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    PUSHBUTTON      "»«“ê‘ ",IDOK,109,81,42,10
+    PUSHBUTTON      "—Ê‘ ò‰ Ê—ŒÊ«‰Ì",IDC_CHANGEMETHEOD,51,81,55,10
+    PUSHBUTTON      "¬„«—",IDC_SETTINGS,7,81,42,10
+    PUSHBUTTON      "›⁄«·”«“Ì «”ò‰— »Â ’Ê—  ‰—„ «›“«—Ì",IDC_SOFTSCAN,27,51,
+                    103,10
+    LTEXT           "»« ‰êÂ œ«‘ ‰ ÌòÌ «“ œò„Â Â«Ì “—œ—‰ê œ” ê«Â",
+                    IDC_SADRTITLE,16,22,126,8
+    LTEXT           "«”ò‰— »Â ’Ê—  ”Œ  «›“«—Ì ›⁄«· „Ì ‘Êœ.",IDC_SADRTITLE2,
+                    21,34,117,8
+    GROUPBOX        " ¬„«œÂ «”ò‰ ",IDC_SFRAME,7,3,144,75,BS_CENTER
+END
+
+IDD_CUSTOMERS_INFO DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   "œ—Ã —ﬁ„",IDC_SELECT,81,67,64,8
+    PUSHBUTTON      "œ—Ã Œÿ«",IDC_ERR,13,67,64,8
+    PUSHBUTTON      "»«“ê‘ ",IDCANCEL,7,81,144,10
+    LTEXT           "‘„«—Â «‘ —«ò:",IDC_SSUBTITLE,103,12,42,8
+    CTEXT           "",IDC_SSUB,13,12,86,8,WS_BORDER
+    LTEXT           "‰«„ „‘ —ò:",IDC_SNAMTITLE,103,23,33,8
+    CTEXT           "",IDC_SNAM,13,23,86,8,WS_BORDER
+    LTEXT           "òœ ¬œ—”:",IDC_SADTITLE,103,34,31,8
+    CTEXT           "",IDC_SAD,13,34,86,8,WS_BORDER
+    LTEXT           "”—Ì«· ò‰ Ê—:",IDC_SSERTITLE,103,45,36,8
+    CTEXT           "",IDC_SSER,13,45,86,8,WS_BORDER
+    PUSHBUTTON      "«ÿ·«⁄«  »Ì‘ —",IDC_MORE,13,56,132,8
+    GROUPBOX        " «ÿ·«⁄«  „‘ —ò ",IDC_SFRAME,7,3,144,75,BS_CENTER
+END
+
+IDD_CUSTOMERS_SEARCHSERIAL DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_ESEARCH,36,37,86,12,ES_CENTER | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "»Ì«»",IDC_SEARCH,63,53,32,10
+    PUSHBUTTON      "»«“ê‘ ",IDOK,109,81,42,10
+    PUSHBUTTON      "—Ê‘ ò‰ Ê—ŒÊ«‰Ì",IDC_CHANGEMETHEOD,51,81,55,10
+    PUSHBUTTON      "¬„«—",IDC_SETTINGS,7,81,42,10
+    LTEXT           " ‘„«—Â ”—Ì«· ò‰ Ê—: ",IDC_ESEARCHTITLE,51,26,57,8
+    GROUPBOX        " Ã” ÃÊ »— «”«” ‘„«—Â ”—Ì«· ò‰ Ê— ",IDC_SFRAME,7,3,144,
+                    75,BS_CENTER
+END
+
+IDD_CUSTOMERS_SEARCHSUB DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_ESEARCH,36,37,86,12,ES_CENTER | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "»Ì«»",IDC_SEARCH,63,53,32,10
+    PUSHBUTTON      "»«“ê‘ ",IDOK,109,81,42,10
+    PUSHBUTTON      "—Ê‘ ò‰ Ê—ŒÊ«‰Ì",IDC_CHANGEMETHEOD,51,81,55,10
+    PUSHBUTTON      "¬„«—",IDC_SETTINGS,7,81,42,10
+    LTEXT           " ‘„«—Â «‘ —«ò: ",IDC_ESEARCHTITLE,56,26,45,8
+    GROUPBOX        " Ã” ÃÊ »— «”«” ‘„«—Â «‘ —«ò ",IDC_SFRAME,7,3,144,75,
+                    BS_CENTER
+END
+
+IDD_CUSTOMERS_SEARCHAD DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_ESEARCH,36,37,86,12,ES_CENTER | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "»Ì«»",IDC_SEARCH,63,53,32,10
+    PUSHBUTTON      "»«“ê‘ ",IDOK,109,81,42,10
+    PUSHBUTTON      "—Ê‘ ò‰ Ê—ŒÊ«‰Ì",IDC_CHANGEMETHEOD,51,81,55,10
+    PUSHBUTTON      "¬„«—",IDC_SETTINGS,7,81,42,10
+    LTEXT           "òœ ¬œ—”:",IDC_ESEARCHTITLE,63,26,31,8
+    GROUPBOX        " Ã” ÃÊ »— «”«” òœ ¬œ—” ",IDC_SFRAME,7,3,144,75,
+                    BS_CENTER
+END
+
+IDD_NOTFOUND DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,52,53,50,10
+    LTEXT           "„‘ —òÌ »« «Ì‰ „‘Œ’«  Ì«›  ‰‘œ.",IDC_SADRTITLE,32,40,95,
+                    8
+END
+
+IDD_CUSTOMERS_STATS DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    LTEXT           " «—ÌŒ «„—Ê“:",IDC_SSUBTITLE,101,18,35,8
+    CTEXT           "",IDC_SDATE,11,18,86,8,WS_BORDER
+    LTEXT           " «—ÌŒ ›«Ì·:",IDC_SSUBTITLE2,101,29,32,8
+    CTEXT           "",IDC_SFDATE,11,29,86,8,WS_BORDER
+    LTEXT           "¬„«— ò·:",IDC_SNAMTITLE,101,40,26,8
+    CTEXT           "",IDC_SSTAT,11,40,86,8,WS_BORDER
+    LTEXT           "¬„«— ‰ŒÊ«‰œÂ Â«:",IDC_SADTITLE,101,51,46,8
+    CTEXT           "",IDC_SNOTREAD,11,51,86,8,WS_BORDER
+    LTEXT           "¬„«— «„—Ê“:",IDC_SSERTITLE,101,62,33,8
+    CTEXT           "",IDC_STODAY,11,62,86,8,WS_BORDER
+    GROUPBOX        " ¬„«— ",IDC_SFRAME,7,3,144,75,BS_CENTER
+    DEFPUSHBUTTON   "»«“ê‘ ",IDOK,7,81,144,10
+END
+
+IDD_OPERATOR_PASS DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_EOPCODE,13,26,86,12,ES_CENTER | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "‘‰«”Â ò«—»—:",IDC_SOPCODETITLE,103,28,36,8
+    EDITTEXT        IDC_EPASS,13,40,86,12,ES_CENTER | ES_PASSWORD | 
+                    ES_NUMBER,WS_EX_DLGMODALFRAME
+    LTEXT           "—„“ Ê—Êœ:",IDC_SPASSTITLE,103,42,28,8
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,13,69,132,10
+    PUSHBUTTON      "«‰’—«›",IDCANCEL,13,80,132,10
+    GROUPBOX        " Ê—Êœ —„“ ",IDC_SFRAME,7,3,144,90,BS_CENTER
+END
+
+IDD_WRITEPROGRESS DIALOG DISCARDABLE  0, 0, 137, 5
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    CONTROL         "Progress1",IDC_WRITEPROGRESS,"msctls_progress32",
+                    PBS_SMOOTH,0,0,137,6
+END
+
+IDD_FILESREADY DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,52,53,50,10
+    LTEXT           "›«Ì·Â«Ì Œ—ÊÃÌ ¬„«œÂ ‘œÂ «‰œ.",IDC_SADRTITLE,36,40,86,8
+END
+
+IDD_NOTTRANSFRED DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,52,53,50,10
+    LTEXT           " « “„«‰Ì òÂ «ÿ·«⁄«  Ã„⁄ ¬Ê—Ì ‘œÂ  Œ·ÌÂ ‰‘œÂ",
+                    IDC_SADRTITLE,15,33,129,8
+    LTEXT           "«„ò«‰  €–ÌÂ «ÿ·«⁄«  ÊÃÊœ ‰œ«—œ.",IDC_SADRTITLE2,33,43,
+                    92,8
+END
+
+IDD_CONTOR_SETTINGS DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    CONTROL         "»Â ÿÊ— ŒÊœò«— „‘ —ò »⁄œÌ —« ‰‘«‰ »œÂ",IDC_RGOTO,"Button",
+                    BS_AUTORADIOBUTTON | BS_RIGHTBUTTON | WS_GROUP,19,13,126,
+                    10
+    CONTROL         "»Â ÿÊ— ŒÊœò«— „‘ —ò ﬁ»·Ì —« ‰‘«‰ »œÂ",IDC_RGOTO2,"Button",
+                    BS_AUTORADIOBUTTON | BS_RIGHTBUTTON,21,26,124,10
+    CONTROL         "Â„«‰ „‘ —ò ŒÊ«‰œÂ ‘œÂ —« ‰‘«‰ »œÂ",IDC_RGOTO3,"Button",
+                    BS_AUTORADIOBUTTON | BS_RIGHTBUTTON,27,39,118,10
+    GROUPBOX        " »⁄œ «“ œ—Ã —ﬁ„ »—«Ì „‘ —ò »Â  — Ì» Œÿ ”Ì—: ",
+                    IDC_SFRAME,7,3,144,50,BS_CENTER
+    PUSHBUTTON      " √ÌÌœ",IDOK,7,80,144,10
+    PUSHBUTTON      " ÂÌÂ Å‘ Ì»«‰",IDC_BACKUPNOW4ME,7,56,144,10
+    PUSHBUTTON      "”«Ì— ê“Ì‰Â Â«",IDC_OTHERSETTINGS,7,68,144,10
+END
+
+IDD_SELPATH DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    PUSHBUTTON      "»«“ê‘ ",IDOK,7,81,144,10
+    LTEXT           "ﬁÿ⁄Â «‰ Œ«»Ì:",IDC_SPATHSELECTTITLE,93,29,39,8
+    COMBOBOX        IDC_CPATHCOMBO,27,28,55,45,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "»—Ê »Â «Ê· ﬁÿ⁄Â",IDC_PATHBEGIN,26,43,107,10
+    PUSHBUTTON      "»—Ê »Â ¬Œ— ﬁÿ⁄Â",IDC_PATHEND,26,55,107,10
+    GROUPBOX        " «‰ Œ«» ﬁÿ⁄Â ",IDC_SFRAME,7,3,144,75,BS_CENTER
+END
+
+IDD_NOTFOUNDPATH DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,52,53,50,10
+    LTEXT           "«Ì‰ ﬁÿ⁄Â »Â œ” ê«Â  €–ÌÂ ‰‘œÂ «” .",IDC_SADRTITLE,30,40,
+                    99,8
+END
+
+IDD_GETSERIAL DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_ESERIAL,13,51,132,12,ES_CENTER | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "„‘«ÂœÂ «Ì‰ Å‰Ã—Â ‰‘«‰Â ¬‰ «”  òÂ Â‰Ê“ òœ",IDC_SCOMMENT,
+                    19,18,119,8
+    LTEXT           "›⁄«·”«“Ì ‰—„ «›“«—Ì Ê«—œ ‰‘œÂ «” .",IDC_SCOMMENT2,27,28,
+                    103,8
+    LTEXT           "·ÿ›« ¬‰ —« œ— Ã⁄»Â “Ì— Ê«—œ Ì«  ’ÕÌÕ ò‰Ìœ:",
+                    IDC_SCOMMENT3,20,38,119,8
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,13,69,132,10
+    PUSHBUTTON      "«‰’—«›",IDCANCEL,13,80,132,10
+    GROUPBOX        " ›⁄«·”«“Ì »—‰«„Â ",IDC_SFRAME,7,3,144,90,BS_CENTER
+END
+
+IDD_ALERT DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,52,53,50,10
+    CTEXT           "„‘ —òÌ »« «Ì‰ „‘Œ’«  Ì«›  ‰‘œ.",IDC_SADRTITLE,7,40,144,
+                    8
+END
+
+IDD_SETTINGS_PASS DIALOG DISCARDABLE  0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    EDITTEXT        IDC_EPASS,36,40,86,12,ES_CENTER | ES_PASSWORD | 
+                    ES_NUMBER,WS_EX_DLGMODALFRAME
+    LTEXT           "—„“ Ê—Êœ:",IDC_SPASSTITLE,65,27,28,8
+    DEFPUSHBUTTON   " √ÌÌœ",IDOK,13,69,132,10
+    PUSHBUTTON      "«‰’—«›",IDCANCEL,13,80,132,10
+    GROUPBOX        " Ê—Êœ —„“ ",IDC_SFRAME,7,3,144,90,BS_CENTER
+END
+
+IDD_MORESETTINGS DIALOGEX 0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   "»«“ê‘ ",IDOK,7,81,144,10
+    PUSHBUTTON      "»«“ê‘  Å‘ Ì»«‰",IDC_METHOD1,13,14,132,10
+    PUSHBUTTON      "«” ›«œÂ «“ Õ«›ŸÂ «’·Ì »—«Ì –ŒÌ—Â «ÿ·«⁄« ",IDC_METHOD2,
+                    13,26,132,10
+    PUSHBUTTON      "«” ›«œÂ «“ ò«—  Õ«›ŸÂ »—«Ì –ŒÌ—Â «ÿ·«⁄« ",IDC_METHOD3,
+                    13,38,132,10
+    PUSHBUTTON      "òÅÌ «ÿ·«⁄«  «“ Õ«›ŸÂ «’·Ì »Â ò«—  Õ«›ŸÂ",IDC_METHOD4,13,
+                    50,132,10
+    PUSHBUTTON      "òÅÌ «ÿ·«⁄«  «“ ò«—  Õ«›ŸÂ »Â Õ«›ŸÂ «’·Ì",IDC_METHOD5,13,
+                    62,132,10
+    GROUPBOX        "  ‰ŸÌ„«  »—‰«„Â ",IDC_SFRAME,7,3,144,75,BS_CENTER
+END
+
+IDD_QUESTION DIALOGEX 0, 0, 158, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 11, "B Titr"
+BEGIN
+    DEFPUSHBUTTON   "»·Â",IDOK,84,53,50,10
+    CTEXT           "¬Ì« „ÿ„∆‰Ìœø",IDC_SADRTITLE,7,40,144,8
+    PUSHBUTTON      "ŒÌ—",IDCANCEL,24,53,50,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONTOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_CUSTOMERS_ADSORTED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_MOREINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_READ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_ERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_SEARCH_SELTOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_SCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_SEARCHSERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_SEARCHSUB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_SEARCHAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_NOTFOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CUSTOMERS_STATS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_OPERATOR_PASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_FILESREADY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_NOTTRANSFRED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CONTOR_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_SELPATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_NOTFOUNDPATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_GETSERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_SETTINGS_PASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_MORESETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_QUESTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x29, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FAR)
+#ifdef _WIN32
+LANGUAGE 0x29, 0x1
+#pragma code_page(1256)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1256)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CONTOR.rc2""  // non-Microsoft eMbedded Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""wceres.rc""         // WCE-specific components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CONTOR.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_CLOSE        BITMAP  DISCARDABLE     "res\\close.bmp"
+IDB_BITMAP_CLOSED       BITMAP  DISCARDABLE     "res\\closed.bmp"
+IDB_METERBITMAP         BITMAP  DISCARDABLE     "res\\Button1.bmp"
+IDB_METERBITMAPD        BITMAP  DISCARDABLE     "res\\Button1d.bmp"
+IDB_BITMAP_BKGND        BITMAP  DISCARDABLE     "res\\back.bmp"
+#endif    // Unknown language: 0x29, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1256)
+#endif //_WIN32
+#include "res\CONTOR.rc2"  // non-Microsoft eMbedded Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "wceres.rc"         // WCE-specific components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
