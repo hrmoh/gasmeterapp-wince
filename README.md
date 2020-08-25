@@ -1,7 +1,7 @@
 # Persian Gas Metering App for Symbol MC3000 (Windows CE) 
 
 
-This is the source code for a gas meter reading app (barcode based) I had developed around 2009 or so to use Symbol MC3000 handheld devices (Windows CE based) for collecting gas meter data.
+This is the source code for a gas meter reading app (barcode based) I had developed around 2006 or so to use Symbol MC3000 handheld devices (Windows CE based) for collecting gas meter data.
 
 It would be compilable with an old version of Visual C++ embeded edition as I recall and there must be SDK companion of the device installed on the compiling machine.
 
