@@ -5,7 +5,7 @@ This is the source code for a gas meter reading app (barcode based) I had develo
 
 It would be compilable with an old version of Visual C++ embeded edition as I recall and there must be SDK companion of the device installed on the compiling machine.
 
-Application end user manual in Persian is still available [here](http://arakara.gozir.com/products/MC3000/manual/).
+Application end user manual in Persian is still available [here](http://arakara.gozir.com/products/MC3000/manual/). The application was intended to be sell commercially and was protected using a software key, which its generator source is included [here](https://github.com/hrmoh/gasmeterapp-wince/tree/master/mc3000keygenproject).
 
 I had published an ![article on adding Persian support to Windows CE at codeproject.com](https://www.codeproject.com/Articles/13746/Persian-Support-for-Windows-CE) regarding this code.
 
